@@ -36,11 +36,15 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    
+    border-radius: 100%;
+    
 }
 .img_user img{
     width:250px;
     height:250px ;
     border-radius: 100%;
+    border: 2px solid #8E703D;
 }
 h1{
     text-align: center;
@@ -111,6 +115,27 @@ h1{
     box-shadow: 0px 14px 10px #b5b5b5 ;
     
 }
+.nav_bar_phon_open{
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 120px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255,);
+    box-shadow: -10px 0 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.nav_bar_phon_open  a{
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #3D3425;
+}
 .nav_bar_phon img{
     width: 65px;
     height: 65px;
@@ -126,7 +151,8 @@ h1{
 
 }
 .warpper_all_content{
-    width: 948px;
+    max-width:948px ;
+    width: 100%;
     margin-top: 70px;
     height: fit-content;
     background:  none;
@@ -355,6 +381,9 @@ p{
 .btn_pf_3_phon{
     display: none;
 }
+.pf_3 a img {
+    margin: 40px 10px;
+}
 .Cal_info{
     display: flex;
     flex-direction: column;
@@ -366,6 +395,7 @@ p{
 }
 .Cal_info h1 {
     font-size: 36px;
+    margin-bottom: 1px;
 }
 .Cal_info p{
     font-size: 24px;
@@ -461,8 +491,7 @@ p{
     height: 100%;
     padding:0 0 20px 0;
     border-radius: 18px;
-    justify-content: center;
-    align-items: center;
+
     margin-top: 30px;
     background: #F5EEEA;
     border: 2px solid #CDC2AE;
@@ -473,12 +502,13 @@ p{
     height: 100px;
 }
 .boxxx{
-    padding: 20px 0;
+    padding: 0px 0;
     display: flex;
     align-items: center;
     justify-content: center
 }
 .boxxx a img {
+    margin: 0;
     width: 250px;
     height: 373px;
 }
@@ -525,9 +555,58 @@ p{
     background: #000;
 }
 
+.container_Performance_8{
+    
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    border-radius: 18px;
+    padding:  40px 0;
+    margin-top: 30px;
+    background: #F5EEEA;
+    border: 2px solid #CDC2AE;
 
-
-
+}
+.pf_8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_Performance_8 img{
+    max-width:350px ;
+    max-height: 373px;
+    width: 100%;
+    height: 100%;
+}
+.btn_pf_8 button{
+    width: 204px;
+    height: 80px;
+    border-radius: 9px;
+    border: none;
+    font-size: 35px;
+    font-weight: 400;
+    box-shadow: 8px 5px 4px #b5b5b5 ;
+    cursor: pointer;
+}
+.pf_8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_pf_8{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.btn_L_8{
+    background: #EECEA1;
+    color: #3D3425;
+    transition: 0.5s;
+}
+.btn_L_8:hover{
+    background: #274c87;
+    color:#ffffff;
+}
 
 
 
@@ -547,15 +626,16 @@ p{
 
 
 .contact{
-    width: 100%;
+    width:100%;
+    max-width:948px ;
     height: 100%;
-    max-height: 100px;
+    max-height: 140px;
     margin: 40px 0;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: #AF8F5A;
+    background: #EDD2A6;
     border-radius: 15px;
     border: 2px solid #8E703D;
     box-shadow: 10px 10px 4px #b5b5b5;
@@ -571,97 +651,14 @@ p{
 
 .contact_info{
     height: 100%;
+    max-width:908px ;
+    width: 100%;
     background: #E3D5CA;
     border: 2px solid #CDC2AE;
     border-radius: 15px;
-    padding: 60px 50px;
-}
-/*
-.box_Pheon_FB{
-    display: flex;
-    margin: 100px 0 0 0;
-    width: 100%;
-    justify-content: space-around;
-    padding: 0 70px;
-    
+   padding: 20px 20px;
 }
 
-.contact_detel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.contact_detel .cantact_icon img{
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-}
-
-.cantact_text p{
-    width: fit-content;
-    min-width: 100%;
-    font-size: 20px;
-    margin: 40px;
-}
-
-.FB{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    }
-    .FB_img img{
-        width: 100px;
-        height: 100px;
-        border-radius: 15px;
-    }
-    .FB_Text p {
-        font-size: 22px;
-        margin: 40px;
-    }
-
-
-
-
-
-    .box_IG_LINE{
-        display: flex;
-        margin: 30px 0px 0 0;
-        justify-content: space-around;
-        padding: 0 50px;
-    }
-
-
-    .box_IG_LINE .FB{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 40px;
-        
-        }
-        .FB_img img{
-            width: 100px;
-            height: 100px;
-            border-radius: 15px;
-        }
-
-
-
-        .IG{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 40px;
-            
-            }
-            .IG_img img{
-                width: 100px;
-                height: 100px;
-                border-radius: 15px;
-            }
-                */
 
     .wrapper_contact{
         display: grid;
@@ -701,6 +698,19 @@ p{
         align-items: center;
         width: 100%;
         height: fit-content;
+    }
+    .contact_item_GH{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contact_item_GH img {
+        width: 92px;
+        height: 92px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 14px;
     }
     .contact_item_FB img {
         width: 92px;
@@ -758,12 +768,15 @@ p{
     transform: translateY(0);
     
 }
-
-
-
-@media (max-width: 399px) {
+@media (max-width: 1380px){
+    .R_Bar{
+        width: 100%;
+    }
     .warpper_all_content{
-        margin-top: 20px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .L_Bar{
         display: none;
@@ -774,7 +787,7 @@ p{
     .nav_bar{
         display: none;
     }
-    .navvv_for_phon{
+        .navvv_for_phon{
         margin: 0;
         display: flex;
         justify-content: center;
@@ -792,6 +805,225 @@ p{
         display: flex;
         align-items: center;
         font-size:32px ;
+        height:130px ;
+        background: #EEDBBB;
+        width: 1000px;
+        border: 2px solid #8E703D;
+        border-radius: 20px ;
+        box-shadow: 0px 14px 10px #b5b5b5 ;
+        
+    }
+    .nav_bar_phon img {
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+    }
+    .bx-menu{
+        font-size: 70px;
+    }
+    .nav_bar_phon_open{
+        width: 350px;
+    }
+    .nav_bar_phon_open a{
+        font-size: 40px;
+    }
+    svg {
+     width: 100%;
+ 
+    }
+
+    .wecome{
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+@media (max-width: 977px){
+    .Content{
+        overflow-x: hidden;
+    }
+    .warpper_all_content{
+        margin-bottom: 0px;
+        width: 100%;
+        max-width: 900px;
+    }
+    .nav_bar_phon{
+        width: 100%;
+    }
+    .nav_bar_phon h1{
+        font-size: 47px;
+    }
+    .wecome{
+        padding:  0 0 40px 0;  
+    }
+    .Text-header{
+        font-size: 55px;
+    }
+    .warpper_all_content{
+        margin: 70px 20px;
+    }
+    .Pf_1_img{
+        margin: 20px;
+    }
+    .Pf_1_img img{
+        width: 100%;
+        max-width: 758px;
+        height: 100%;
+    }
+    .btn_pf_1   a{
+        width: 100%;
+        max-width: 350px;
+    }
+    .btn_pf_1 Button{
+        width: 100%;
+        max-width: 290px;
+    }
+    .pf_2 a img {
+        width: 100%;
+        height: 100%;
+        margin: 20px 10px 0 0;
+    }
+
+
+    .btn_pf_2{
+        display: none;
+    }
+    .btn_pf_2_phon{
+        margin: 10px 0 40px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .btn_pf_2_phon p{
+        font-size: 34px;
+    }
+    .btn_pf_2_phon Button{
+        text-align: center;
+        font-size: 20px;
+        border: none;
+        border-radius: 9px;
+        width: 290px;
+        height: 80px;
+        font-size: 10px;
+        box-shadow: 8px 5px 4px #b5b5b5 ;
+    }
+    .container_Performance_3{
+        padding: 0 0 20px 0;
+    }
+    .btn_pf_3_phon{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .btn_pf_3_phon p{
+        font-size: 34px;
+    }
+    .btn_pf_3_phon Button{
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 20px;
+        border: none;
+        border-radius: 9px;
+        width: 290px;
+        height: 80px;
+        font-size: 10px;
+        box-shadow: 8px 5px 4px #b5b5b5 ;
+    }
+    .btn_pf_3{
+        display: none;
+    }
+    .pf_3 a{
+        margin: 20px;
+    }
+    .pf_3 a img {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        margin: 0;
+    }
+    .btn_pf_6{
+        display: none;
+    }
+    .container_Performance_8 img{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+
+    .contact{
+        width: 100%;
+        max-width: 914px;
+    }
+    .contact_info{
+        width: 100%;
+        max-width: 800px;
+        padding: 0;
+    }
+    .wrapper_contact{
+        padding: 20px  0 0 20px;
+    }
+    .contact_item_GH{
+        padding: 20px 20px 0 0;
+    }
+    .contact_item p{
+        width: fit-content;
+     } 
+     .wrapper_contact{
+        padding: 0;
+     }
+     .contact_item_FB p{
+        width: fit-content;
+     }
+     .contact_item_GH{
+        margin: 0 0 0 75px;
+     }
+}   
+
+@media (max-width: 500px) {
+    
+
+    .warpper_all_content{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+        max-width: 350px;
+    }
+    .L_Bar{
+        display: none;
+    }
+    .navvv{
+        display: none;
+    }
+    .nav_bar{
+        display: none;
+    }
+    .nav_bar_phon_open{
+        width: 150px;
+    }
+    .nav_bar_phon_open a{
+        font-size: 20px;
+    }
+
+    .navvv_for_phon{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        position: sticky;
+        border-bottom-left-radius:10px ;
+        border-bottom-right-radius:10px ;
+        background-color: #EDDDD5;
+    }
+    
+    .nav_bar_phon{
+        margin: 5px 0;
+        top: 0;
+        position: sticky;
+        display: flex;
+        align-items: center;
+        font-size:32px ;
         height:70px ;
         background: #EEDBBB;
         width: 369px;
@@ -801,6 +1033,8 @@ p{
         
     }
     .nav_bar_phon img {
+        width: 60px;
+        height: 60px;
         border-radius: 100%;
     }
     .nav_bar_phon h1{
@@ -809,19 +1043,19 @@ p{
     .bx-menu{
         font-size: 40px;
     }
-    .warpper_all_content{
-        width: 369px;
-    }
+
     .Text-header{
         font-size: 20px;
     }
     .P_labe p{
         font-size: 16px;
     }
+    .wecome{
+        margin: 10px;
+    }
     .Performance{
-
         margin: 20px 0;
-        width: 362px;
+        width: 349px;
         height: 59px;
     }
     .Performance p{
@@ -860,7 +1094,11 @@ p{
         width:144.46px ;
         height:179px ;
     }
+    .BMI_info {
+    margin: 5px;
+    }
     .BMI_info h1{
+    margin-bottom: 10px;
     font-size:20px ;
     }
     .BMI_info p{
@@ -912,6 +1150,7 @@ p{
         font-size: 16px;
     }
     .Cal_info h1{
+        margin-bottom: 10px;
         font-size: 20px;
     }
     .Cal_info p{
@@ -920,11 +1159,23 @@ p{
     }
     .Cal_info{
         margin: 20px 0;
+    }.container_Performance_3{
+        height: 100%;
+        max-height: 270px;
     }
     .container_Performance_3 img {
         width: 149px;
         height: 154px;
         margin: 20px 20px 20px 0;
+    }
+    .pf_3 a{
+        margin: 10px;
+    }
+    .pf_3 a img {
+        width: 100%;
+        height: 100%;
+        max-width: 180px;
+
     }
     .btn_pf_3_phon{
         display: flex;
@@ -947,6 +1198,14 @@ p{
     .Cal_info{
         width: 200px;
     }
+    .connnn{
+        width: 100%;
+        max-width: 160px;
+        height: 100%;
+    }
+
+
+
     .stor_info h1 {
         font-size: 20px;
     }
@@ -965,6 +1224,9 @@ p{
         width: 121px;
         height: 35px;
         font-size: 16px;
+    }
+    .container_Performance_6{
+        padding: 0 0 10px 0;
     }
     .container_Performance_6 img  {
         width: 50px;
@@ -994,9 +1256,18 @@ p{
         width: 180px;
         height:200px;
     }
+    .container_Performance_8{
+        padding:  0 0 10px 0;
+    }
+    .container_Performance_8 img{
+        margin: 0 0 0 10px;
+    }
+    .btn_pf_3_phon Button {
+        margin: 0;
+    }
     .contact{
         margin: 20px 0;
-        width: 362px;
+        width: 349px;
         height: 59px;
     }
     .contact p{
@@ -1005,10 +1276,31 @@ p{
     .contact_info {
         padding: 10px 0 0 10px;
     }
+     .contact_item p{
+        width: fit-content;
+     } 
+     .wrapper_contact{
+        padding: 0;
+     }
+     .contact_item_FB p{
+        width: fit-content;
+     }
+
     .contact_item img{
         width: 40px;
         height: 40px;
         border-radius: 6px;
+    }
+    .contact_item_GH img{
+        width: 50px;
+        height: 40px;
+        border-radius: 6px;
+    }
+    .contact_item_GH p {
+        font-size: 13px;
+    }
+    .contact_item p{
+        font-size: 13px;
     }
     .contact_item_FB img{
         width: 40px;
