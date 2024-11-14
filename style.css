@@ -202,6 +202,7 @@ p{
     box-shadow: 10px 10px 4px #b5b5b5;
 
 }
+
 .Performance p {
     width: 100%;
     color: #3D3425;
@@ -878,10 +879,11 @@ p{
         width: 100%;
         max-width: 290px;
     }
+
     .pf_2 a img {
         width: 100%;
         height: 100%;
-        margin: 20px 10px 0 0;
+        margin: 20px 0  0 15px;
     }
 
 
@@ -945,10 +947,16 @@ p{
         display: none;
     }
     .container_Performance_8 img{
+        margin: 0 0 0 15px;
         width: 100%;
         height: 100%;
     }
-    
+    .btn_L_2_phon {
+        background: #EECEA1;
+        color: #3D3425;
+        transition: 0.5s;
+        cursor: pointer;
+    }
 
 
     .contact{
@@ -1229,12 +1237,13 @@ p{
         padding: 0 0 10px 0;
     }
     .container_Performance_6 img  {
-        width: 50px;
-        height: 50px;
-        margin: 0;
+        
+        width: 30px;
+        height: 30px;
+        margin: 5px 0 0 5px ;
     }
     .Cal_python_info{
-        margin: 0;
+        margin: 0 0 0 10px;
     }
     .Cal_python_info h1 {
         font-size: 20px;
