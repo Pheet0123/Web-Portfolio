@@ -18,6 +18,7 @@
     font-style: normal;
     
 }
+
 html {
     scroll-behavior: smooth;
 
@@ -88,6 +89,9 @@ body{
     color: var(--text-color-General);
     transition: var(--transition-time);
 }
+.L_Bar h1{
+    transition: var(--transition-time);
+}
 .img_user{
     display: flex;
     justify-content: center;
@@ -145,6 +149,7 @@ h1{
     transition: var(--btn-border);
 }
 .nav_bar a:hover{
+    transition: var(--transition-time);
     color: var(--hover-text-color-navber);
 }
 
@@ -236,19 +241,20 @@ h1{
     border: 2px solid var(--border-info-bg);
     color: var(--text-color-General);
     border-radius: 14px;
-    
+
 }
 .Text-header{
     margin-top: 40px;
     text-align: center;
     font-size: 64px;
+    transition: var(--transition-time);
 }
 .P_labe{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align:center ;
-    
+    transition: var(--transition-time);
 }
 
 p{
@@ -366,6 +372,7 @@ p{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    
 }
 .btn_pf_1 button{
     width: 340px;
@@ -378,15 +385,18 @@ p{
     box-shadow: 8px 5px 4px var(--shadow) ;
     border:3px solid var(--btn-border);
     cursor: pointer;
+    transition: var(--transition-time);
 }
 .btn_L_1{
     background: var(--btn);
     color: var(--text-color-section);
     transition: 0.5s;
+    
 }
 .btn_L_1:hover{
     background: #e4c6ff;
     color:#585858;
+    
 }
 .btn_GitHub{
     background: var(--btn);
@@ -505,11 +515,13 @@ p{
     height: 80px;
     border-radius: 9px;
     border: none;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     box-shadow: 8px 5px 4px var(--shadow);
     border:3px solid var(--btn-border);
     cursor: pointer;
+    transition: var(--transition-time);
+    
 }
 .btn_L_2{
     background: var(--btn);
@@ -563,6 +575,7 @@ p{
     animation: slide_pf_3 16s infinite;
     
 }
+
 @keyframes slide_pf_3{
     0%{
         transform: translateX(0);
@@ -617,7 +630,7 @@ p{
     height: 80px;
     border-radius: 9px;
     border: none;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     box-shadow: 8px 5px 4px var(--shadow);
     border:3px solid var(--btn-border);
@@ -727,7 +740,7 @@ p{
     height: 80px;
     border-radius: 9px;
     border: none;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 400;
     box-shadow: 8px 5px 4px var(--shadow) ;
     background: var(--btn);
@@ -829,7 +842,7 @@ p{
     height: 80px;
     border-radius: 9px;
     border: none;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     box-shadow: 8px 5px 4px var(--shadow);
     border:3px solid var(--btn-border);
@@ -1072,7 +1085,15 @@ p{
     }
 
 
-
+    .btn_L_9{
+        background: var(--btn);
+        color: var(--text-color-section);
+        transition: 0.5s;
+    }
+    .btn_L_9:hover{
+        background: #F7A63A;
+        color:#000000;
+    }
 
 
 
@@ -1141,8 +1162,22 @@ p{
     .darkmode #theme-switch svg:last-child{
         display: block;
     }
-
+    .thank {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color-General);
+        font-size: 25px;
+        
+    }
+    .transition{
+        transition: var(--transition-time);
+    }
 @media (max-width: 1380px){
+    a:active{
+        outline: 0;
+        border: none;
+    }
     .R_Bar{
         width: 100%;
     }
@@ -1372,6 +1407,10 @@ p{
         transition: 0.5s;
         cursor: pointer;
     }
+    .btn_L_9_phon{
+        transition: 0.5s;
+    }
+
     .container_Performance_8 .btn_pf_3_phon {
         margin: 20px 0 0 0;
     }
@@ -1395,7 +1434,10 @@ p{
         background: #274c87;
         color:#ffffff;
     }
-
+    .container_Performance_3 .btn_L_9_phon:hover{
+        background: #F7A63A;
+        color:#000000;
+    }
 
 
 
@@ -1463,7 +1505,10 @@ p{
        .animation{
         animation: none;
     }
-    
+    a :active{
+        outline: 0;
+        border: none;
+    }
     .warpper_all_content{
         width: 100%;
         margin-top: 20px;
@@ -1496,6 +1541,8 @@ p{
         border-bottom-left-radius:10px ;
         border-bottom-right-radius:10px ;
         background-color: var(--bg-Body);
+
+        transition: var(--transition-time);
     }
     
     .nav_bar_phon{
@@ -1511,6 +1558,7 @@ p{
         border: 2px solid var(--border-info-bg);
         border-radius: 20px ;
         box-shadow: 0px 14px 10px var(--shadow);
+        transition: var(--transition-time);
         
     }
     .nav_bar_phon img {
@@ -1694,7 +1742,11 @@ p{
     }
 
 
-
+    .btn_L_9_phon p{
+        width: 100%;
+        font-size: 16px;
+        margin: 0;
+    }
 
     .btn_pf_3{
         display: none;
@@ -1774,8 +1826,17 @@ p{
     .btn_pf_3_phon Button {
         margin: 0;
     }
+
+
+
+
+
+
+
+
+
     .contact{
-        margin: 20px 0 0 0;
+        margin: 20px 0 ;
         width: 349px;
         height: 59px;
     }
@@ -1867,9 +1928,9 @@ p{
         outline: none;
         
     }
-    *{
-        outline: none;
-    }
 
+    .thank{
+        font-size: 12px;
+    }
 
 }
